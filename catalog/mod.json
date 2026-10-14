@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "id": "icons-filter",
+  "name": "Icons Filter",
+  "description": "Search the Designer icon picker with text and aliases.",
+  "author": "joshua-small",
+  "helpUrl": "https://github.com/joshua-small/qsys-icons-filter",
+  "thumbnail": "catalog/artwork/avitex.ico"
+}
