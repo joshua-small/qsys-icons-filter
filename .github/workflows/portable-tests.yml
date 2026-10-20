@@ -1,0 +1,19 @@
+name: Portable behavior tests
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  icon-query:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          global-json-file: global.json
+      - name: Check icon query behavior
+        run: dotnet run --project tests/IconsFilter.Tests/IconsFilter.Tests.csproj --configuration Release
